@@ -3,10 +3,12 @@ body {
   padding-top: 80px; /* Add padding to body to prevent content from being hidden by fixed navbar */
 }
 
+/* =========== CUSTOM STYLE ======== */
 .custom-padding-m{
   padding-top: 64px;
   padding-bottom: 64px;
 }
+/* ================================= */
 
 /* === NAVBAR === */
 .navbar {
@@ -58,7 +60,7 @@ body {
 }
 
 .navbar-brand img {
-  max-height: 50px;
+  max-height: 40px;
   width: auto;
   border-radius: 0.5rem;
 }
@@ -66,18 +68,18 @@ body {
 /* === HEADER === */
 .hero-header {
   width: 100%;
-  height: 100vh; /* Full viewport height */
+  height: 92vh;
   background-image: url('../images/bw/header.jpg'); /* Path to your image */
   background-size: cover; /* Cover the entire area */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   display: flex;
-  /* Change alignment to top-left-ish */
-  justify-content: flex-start; /* Align content to the start (left) */
+  
+  justify-content: flex-end; /* Align content to the start (left) */
   align-items: flex-start; /* Align content to the start (top) */
   color: #fff; /* Text color on the header */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: text shadow for readability */
-  padding-top: 20%; /* Margin from the top */
+  padding-bottom: 10vh; /* Margin from the top */
   padding-left: 10%; /* Adjust left padding as needed */
   flex-direction: column; /* Stack h1 and p vertically */
 }
@@ -91,7 +93,76 @@ body {
   margin-top: 0;
 }
 
+/* === TEXT STYLE === */
+.heading {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+
 /* === SECTIONS === */
-#introduction img{
+#intro{
+  background-color: #FFF;
+}
+
+#intro img{
   max-height: 150px;
+}
+
+#usp {
+  background-color: #000;
+  color: #FFF;
+  padding: 4rem 0; 
+}
+
+/* === Unique Selling Point Section === */
+.usp-item {
+  margin-bottom: 2rem;
+}
+
+.usp-item .usp-image-wrapper {
+  overflow: hidden;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem; /* Space between image and text on small screens */
+}
+
+.usp-item .usp-image {
+  width: 100%;
+  height: 300px; /* Fixed height for consistency */
+  object-fit: cover; 
+  border-radius: 0.5rem;
+}
+
+.usp-item h3 {
+  font-weight: 600; /* Semi-bold for item titles */
+  margin-bottom: 0.75rem;
+  color: #FFF;
+}
+
+.usp-item p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Responsive adjustments for navbar padding */
+@media (max-width: 991.98px) {
+  .navbar {
+    padding: 1rem 15px; /* Less padding on smaller screens */
+  }
+  .navbar-brand img {
+    max-height: 40px;
+  }
+}
+
+/* Responsive adjustments for header text position */
+@media (max-width: 767.98px) {
+  .hero-header {
+    padding-top: 30%; /* Adjust margin for mobile */
+    padding-left: 5%; /* Adjust left padding for mobile */
+  }
+  .hero-header h1 {
+    font-size: 2rem; /* Smaller font on mobile */
+  }
+  .hero-header p {
+    font-size: 1rem; /* Smaller font on mobile */
+  }
 }
