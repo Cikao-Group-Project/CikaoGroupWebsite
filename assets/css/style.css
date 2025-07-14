@@ -1,6 +1,7 @@
 body {
   font-family: "Poppins", sans-serif;
-  padding-top: 80px; /* Add padding to body to prevent content from being hidden by fixed navbar */
+  background-color: #000;
+  padding-top: 50px;
 }
 
 /* =========== CUSTOM STYLE ======== */
@@ -65,10 +66,33 @@ body {
   border-radius: 0.5rem;
 }
 
+/* === CTA WHATSAPP === */
+.btn-floating-wa {
+  position: fixed;
+  bottom: 5vh;
+  right: 5vh;
+  background-color: #1CAB5F;
+  border: 5px solid #126E3D;
+  color: white;
+  padding: 16px 24px;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+.btn-floating-wa:hover {
+  background-color: #179B55;
+  text-decoration: none;
+  color: white;
+}
+
+
 /* === HEADER === */
 .hero-header {
   width: 100%;
-  height: 92vh;
+  height: 95vh;
   background-size: cover; /* Cover the entire area */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
@@ -78,7 +102,7 @@ body {
   align-items: flex-start; /* Align content to the start (top) */
   color: #fff; /* Text color on the header */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: text shadow for readability */
-  padding-bottom: 10vh; /* Margin from the top */
+  padding-bottom: 16vh; /* Margin from the top */
   padding-left: 10%; /* Adjust left padding as needed */
   flex-direction: column; /* Stack h1 and p vertically */
 }
@@ -181,11 +205,18 @@ body {
   }
 } */
 
-.section {
+.section-a {
+  background-color: #000;
+  color: #fff;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.section-b {
   background-color: #1a1a1a;
+  color: #fff;
   padding-top: 100px;
   padding-bottom: 100px;
-  color: #fff;
 }
 
 
@@ -218,7 +249,7 @@ body {
 #gallery {
   background-color:#000;
   color:#fff;
-  padding-bottom:64px;
+  padding-top:0px;
 }
 
 /* main slide keeps 16:9 look on desktop, full‑width on small screens */
@@ -259,7 +290,60 @@ body {
 }
 #thumb-strip::-webkit-scrollbar{display:none;} /* hide scrollbar Chrome */
 
+/* =============================================================================== */
+/* FOOTER OUTLET INFINITE SCROLLING */
 
+footer {background:#000; color:#fff; padding-top:32px;}
+
+/* Individual outlet card */
+.outlet-card{
+  position:relative;
+  flex:0 0 260px;          /* width */
+  height:150px;
+  border-radius:18px;
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  color:#fff;
+  text-align:center;
+  background-size:cover;
+  background-position:center;
+  background-image:var(--bg);
+}
+
+/* Darken overlay */
+.outlet-card::before{
+  content:"";
+  position:absolute; inset:0;
+  background:rgba(0,0,0,.45);
+  backdrop-filter:brightness(.75);
+}
+
+/* Logo & brand text above overlay */
+.outlet-card img,
+.outlet-card .brand-name{position:relative; z-index:1;}
+
+.outlet-card img{width:60px; height:60px; object-fit:contain;}
+.brand-name{margin:0; font-weight:600; font-size:1rem; color:#fff;}
+
+/* ===== Infinite scroll animation ===== */
+#outlet-track{
+  animation:scroll-left linear 25s infinite;
+}
+@keyframes scroll-left{
+  from{transform:translateX(0);}
+  to  {transform:translateX(calc(-50% - 2rem));} /* ­½ track width */
+}
+
+#copyright{
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: #000;
+  color: #FFF;
+}
 
 /* =============================================================================== */
 
