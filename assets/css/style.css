@@ -100,8 +100,7 @@ body {
 
   justify-content: flex-end; /* Align content to the start (left) */
   align-items: flex-start; /* Align content to the start (top) */
-  color: #fff; /* Text color on the header */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: text shadow for readability */
+  color: black; /* Text color on the header */
   padding-bottom: 16vh; /* Margin from the top */
   padding-left: 10%; /* Adjust left padding as needed */
   flex-direction: column; /* Stack h1 and p vertically */
@@ -109,11 +108,13 @@ body {
 
 .hero-header h1 {
   margin-bottom: 0.5rem; /* Space between H1 and subtitle */
+  font-weight: 700;
 }
 
 .hero-header p {
   font-size: 1.75rem; /* Adjust subtitle font size */
   margin-top: 0;
+  font-weight: 500;
 }
 
 /* === TEXT STYLE === */
@@ -306,7 +307,7 @@ footer {background:#000; color:#fff; padding-top:32px;}
 /* Individual outlet card */
 .outlet-card{
   position:relative;
-  flex:0 0 300px;          /* width */
+  flex:0 0 260px;          /* width */
   height:150px;
   border-radius:18px;
   overflow:hidden;
