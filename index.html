@@ -44,13 +44,13 @@
               Outlets
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="cikaopark.html">Cikao Park</a></li>
-              <li><a class="dropdown-item" href="watervilla.html">Water Villa</a></li>
-              <li><a class="dropdown-item" href="castlecafe.html">Castle Cafe</a></li>
-              <li><a class="dropdown-item" href="chantilly.html">Chantilly</a></li>
-              <li><a class="dropdown-item" href="bw.html">BW Pool & Cafe</a></li>
-              <li><a class="dropdown-item" href="abc.html">ABC Angkringan</a></li>
-              <li><a class="dropdown-item" href="castlefashion.html">Castle Fashion</a></li>
+              <li><a class="dropdown-item" href="cikaopark/index.html">Cikao Park</a></li>
+              <li><a class="dropdown-item" href="watervilla/index.html">Water Villa</a></li>
+              <li><a class="dropdown-item" href="castlecafe/index.html">Castle Cafe</a></li>
+              <li><a class="dropdown-item" href="chantilly/index.html">Chantilly</a></li>
+              <li><a class="dropdown-item" href="blackwhite/index.html">BW Pool & Cafe</a></li>
+              <li><a class="dropdown-item" href="abc/index.html">ABC Angkringan</a></li>
+              <li><a class="dropdown-item" href="castlefashion/index.html">Castle Fashion</a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -103,14 +103,30 @@
 
   <section id="mainOutlet" class="custom-padding-m">
     <div class="mainlayout">
-      <div>
-        <img src="assets/images/cg/cikaopark1.webp" alt="Water Park" width="400" height="200">
+      <div>     
+        <img id="slideMainOutlet"src="assets/images/cg/cikaopark1.webp" alt="Water Park" width="400" height="200">
+        <script>
+          var gambarList = ["assets/images/cg/cikaopark1.webp", "assets/images/cg/cikaopark2.webp", "assets/images/cg/cikaopark3.webp", "assets/images/cg/cikaopark1.webp"];
+          var index = 0;
+          var imgElement = document.getElementById("slideMainOutlet");
+
+          setInterval(function() {
+            index++;
+            if (index >= gambarList.length) {
+              index = 0;
+            }
+            imgElement.src = gambarList[index];
+          }, 1500); // 1000 ms = 1 detik
+        </script>
       </div>
+
       <div>
-        <h1> Cikao Park</h1>
-        <p>Nikmati ombak serasa di pantai di Water Park, Amati berbagai spesies satwa di Mini Zoo, 
-            Cari spot foto unik dan kreatif di Rumah Ilusi, dan seru-seruan di Area Permainan. 
-            Yuk, ciptakan momen tak terlupakan di Cikao Park! </p>
+        <h2 class="fw-bold"> Cikao Park</h1>
+        <p>Nikmati ombak serasa di pantai di <strong>Water Park</strong>, Amati berbagai spesies satwa di <strong>Mini Zoo</strong>, 
+          Cari spot foto unik dan kreatif di <strong>Rumah Ilusi</strong>, dan seru-seruan di <strong>Area Permainan.</strong>
+          Yuk, ciptakan momen tak terlupakan di Cikao Park! 
+        </p>
+        <a href="cikaopark/index.html"> lebih lanjut </a>
       </div>   
     </div>
   </section>
@@ -122,13 +138,13 @@
     </div>
 
     <div class="layout">
-      <a href="cikaopark.html">
+      <a href="cikaopark/index.html">
         <div class="outlet-card" style="background-image: url(assets/images/cg/outlet-cikaopark.webp);"> 
         <img src="assets/logos/logo_cikaopark.svg" alt="🦜">
         <p class="brand-name">Cikao Park</p>   
         </div>
       </a>
-      <a href="watervilla.html">
+      <a href="watervilla/index.html">
         <div class="outlet-card" style="background-image: url(assets/images/cg/outlet-watervilla.webp);" > 
         <img src="assets/logos/logo_cikaopark.svg" alt="🦜">
         <p class="brand-name">Water Villa</p>   
@@ -137,19 +153,19 @@
     </div>
 
     <div class="layout">
-      <a href="castlecafe.html">
+      <a href="castlecafe/index.html">
         <div class="outlet-card" style="background-image: url(assets/images/cg/outlet-castlecafe.webp);"> 
         <img src="assets/logos/logo_cikaopark.svg" alt="🦜">
         <p class="brand-name">Castle Cafe</p>   
         </div>
       </a>
-      <a href="chantilly.html">
+      <a href="chantilly/index.html">
         <div class="outlet-card" style="background-image: url(assets/images/cg/outlet-chantilly.webp);"> 
         <img src="assets/logos/logo_cikaopark.svg" alt="🦜">
         <p class="brand-name">Chantilly Patisserie & Bakery</p>   
       </div>
       </a>
-      <a href="bw.html">
+      <a href="blackwhite/index.html">
         <div class="outlet-card" style="background-image: url(assets/images/cg/outlet-blackwhite1.webp);" > 
         <img src="assets/logos/logo_bw.webp" alt="🦜">
         <p class="brand-name">BW Pool & Arcade</p>   
@@ -158,13 +174,13 @@
     </div>
 
     <div class="layout">
-      <a href="abc.html">
+      <a href="abc/index.html">
         <div class="outlet-card" style="background-image: url(assets/images/cg/outlet-angkringan.webp);"> 
         <img src="assets/logos/logo_cikaopark.svg" alt="🦜">
         <p class="brand-name">Angkiran ABC</p>   
         </div>
       </a>
-      <a href="castlefashion.html">
+      <a href="castlefashion/index.html">
         <div class="outlet-card" style="background-image: url(assets/images/cg/outlet-castlefashionwebp.webp);"> 
         <img src="assets/logos/logo_cikaopark.svg" alt="🦜">
         <p class="brand-name">Castle Fashion</p>   
