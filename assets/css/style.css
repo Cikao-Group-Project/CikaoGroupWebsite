@@ -108,7 +108,7 @@ body {
 
   justify-content: flex-end; /* Align content to the start (left) */
   align-items: flex-start; /* Align content to the start (top) */
-  color: black; /* Text color on the header */
+  color: white; /* Text color on the header */
   padding-bottom: 16vh; /* Margin from the top */
   padding-left: 10%; /* Adjust left padding as needed */
   flex-direction: column; /* Stack h1 and p vertically */
@@ -242,8 +242,6 @@ body {
   color: #fff;
 }
 
-
-
 .social-link {
   color: #FFF;
   text-decoration: none;
@@ -279,11 +277,11 @@ body {
   object-fit:cover;
   border-radius:12px;
   cursor:pointer;
-  opacity:.65;
-  transition:opacity .2s, transform .2s;
+  filter: brightness(0.5);
+  transition:filter .2s, transform .2s;
 }
 .thumb.active,
-.thumb:hover {opacity:1; transform:scale(1.05);}
+.thumb:hover {filter: brightness(1); transform:scale(1.05);}
 
 /* arrow buttons */
 .btn-nav{
@@ -312,36 +310,10 @@ body {
 
 footer {background:#000; color:#fff; padding-top:32px;}
 
-
-.footer-container {
-  display: flex;
-  max-width: 1200px;
-  margin: 50px;
-  flex-wrap: wrap;
+footer ul{
+  margin-bottom: 0px;
 }
 
-.footer-section {
-  flex: 1;
-  min-width: 250px;
-  align-items: flex-start;
-}
-
-.footer-section h3 {
-  font-size: 18px;
-  margin-bottom: 10px;
-  align-content: start;
-}
-
-.footer-section p {
-  font-size: 14px;
-  line-height: 1.6;
-}
-
-.footer-divider {
-  width: 1px;
-  background-color: #666;
-  height: 150px;
-}
 
 /* Individual outlet card */
 .outlet-card{
@@ -433,10 +405,12 @@ footer {background:#000; color:#fff; padding-top:32px;}
 #outlets {
   background-color: #A7D9F1;
 }
+
 .layout {
   background-color: #A7D9F1;
-  width: 1920;
-  height: 200;
+  width: 100%;
+    /* width: 1920; sebelumnya, ini error karna fixed
+      height: 200; dan juga invalid gk ada satuan-nya*/
   margin:  auto;
   display: flex;
   justify-content: center;
@@ -457,7 +431,7 @@ footer {background:#000; color:#fff; padding-top:32px;}
 .mainlayout{
   width: 100%;
   height: 300;
-  margin:  auto;
+  /* margin:  auto; */
   display: flex;
   justify-content: center;
 }
@@ -477,9 +451,9 @@ footer {background:#000; color:#fff; padding-top:32px;}
 
 }
 
-a {
+/* a {
   color: black;
   font-weight: 700;
   text-decoration: underline; 
-}
+} */
 
