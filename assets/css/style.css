@@ -1,11 +1,13 @@
-*{
+* {
   transition: 0.3s ease-in-out;
 }
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #000;
-  padding-top: 50px;
+  background: linear-gradient(to bottom, #ffffff, #000000);
+  padding-top: 60px;
+  background-color: #000000;
+  min-height: 100vh;
 }
 
 /* =========== CUSTOM STYLE ======== */
@@ -64,7 +66,8 @@ body {
   padding: 0.5rem 1rem;
 }
 
-.dropdown-item.active, .dropdown-item:active {
+.dropdown-item.active,
+.dropdown-item:active {
   background-color: #000;
 }
 
@@ -79,39 +82,39 @@ body {
   position: fixed;
   bottom: 5vh;
   right: 5vh;
-  background-color: #1CAB5F;
-  border: 5px solid #126E3D;
+  background-color: #1cab5f;
+  border: 5px solid #126e3d;
   color: white;
   padding: 16px 24px;
   border-radius: 15px;
   font-size: 1.2rem;
   text-decoration: none;
   z-index: 1000;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 }
 .btn-floating-wa:hover {
-  background-color: #179B55;
+  background-color: #179b55;
   text-decoration: none;
   color: white;
 }
-
 
 /* === HEADER === */
 .hero-header {
   width: 100%;
   height: 95vh;
+  padding-bottom: 16vh; /* Margin from the top */
+  padding-left: 10%; /* Adjust left padding as needed */
   background-size: cover; /* Cover the entire area */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   display: flex;
+  flex-direction: column; /* Stack h1 and p vertically */
 
   justify-content: flex-end; /* Align content to the start (left) */
   align-items: flex-start; /* Align content to the start (top) */
   color: white; /* Text color on the header */
-  padding-bottom: 16vh; /* Margin from the top */
-  padding-left: 10%; /* Adjust left padding as needed */
-  flex-direction: column; /* Stack h1 and p vertically */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
 }
 
 .hero-header h1 {
@@ -125,9 +128,11 @@ body {
   font-weight: 500;
 }
 
+
 /* === TEXT STYLE === */
 .heading {
   text-align: center;
+  justify-self: center;
 }
 
 /* === SECTIONS === */
@@ -140,11 +145,11 @@ body {
 }
 
 #exploreOutlet {
-  background-color: #A7D9F1;
+  background-color: #a7d9f1;
   color: #000;
 }
 #mainOutlet {
-  background-color: #C1EAFD;
+  background-color: #c1eafd;
   color: #000;
 }
 
@@ -236,14 +241,14 @@ body {
   padding-bottom: 100px;
 }
 
-
-#price th, #price td{
+#price th,
+#price td {
   background: transparent;
   color: #fff;
 }
 
 .social-link {
-  color: #FFF;
+  color: #fff;
   text-decoration: none;
   transition: color 0.1s ease;
 }
@@ -253,8 +258,7 @@ body {
   text-decoration: underline;
 }
 
-
-.map{
+.map {
   overflow: hidden;
   border-radius: 30px;
   margin-top: 32px;
@@ -262,107 +266,137 @@ body {
 /* =============================================================================== */
 /* === Gallery === */
 #gallery {
-  background-color:#000;
-  color:#fff;
-  padding-top:0px;
+  background-color: #000;
+  color: #fff;
+  padding-top: 0px;
 }
 
 /* main slide keeps 16:9 look on desktop, full‑width on small screens */
-#main-slide {aspect-ratio:16/9;}
+#main-slide {
+  aspect-ratio: 16/9;
+}
 
 /* thumbnail sizing */
 .thumb {
-  width:140px;              /* tweak as you like */
-  aspect-ratio:16/9;
-  object-fit:cover;
-  border-radius:12px;
-  cursor:pointer;
+  width: 140px; /* tweak as you like */
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: 12px;
+  cursor: pointer;
   filter: brightness(0.5);
-  transition:filter .2s, transform .2s;
+  transition: filter 0.2s, transform 0.2s;
 }
 .thumb.active,
-.thumb:hover {filter: brightness(1); transform:scale(1.05);}
+.thumb:hover {
+  filter: brightness(1);
+  transform: scale(1.05);
+}
 
 /* arrow buttons */
-.btn-nav{
-  width:64px; height:64px;
-  border:none;
-  background:#e0e0e0;
-  color:#000;
-  flex-shrink:0;
+.btn-nav {
+  width: 64px;
+  height: 64px;
+  border: none;
+  background: #e0e0e0;
+  color: #000;
+  flex-shrink: 0;
 }
-.btn-nav:hover{background:#fff;}
+.btn-nav:hover {
+  background: #fff;
+}
 
-#thumb-wrapper{
+#thumb-wrapper {
   max-width: 600px;
   border-radius: 10px;
 }
 
-#thumb-strip{
-  padding:2px;
-  overflow-x:auto;
-  scroll-behavior:smooth;
+#thumb-strip {
+  padding: 2px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
 }
-#thumb-strip::-webkit-scrollbar{display:none;} /* hide scrollbar Chrome */
+#thumb-strip::-webkit-scrollbar {
+  display: none;
+} /* hide scrollbar Chrome */
 
 /* =============================================================================== */
 /* FOOTER OUTLET INFINITE SCROLLING */
 
-footer {background:#000; color:#fff; padding-top:32px;}
+footer {
+  background: #000;
+  color: #fff;
+  padding-top: 32px;
+}
 
-footer ul{
+footer ul {
   margin-bottom: 0px;
 }
 
-
 /* Individual outlet card */
-.outlet-card{
-  position:relative;
-  flex:0 0 260px;          /* width */
-  height:150px;
-  border-radius:18px;
-  overflow:hidden;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-  gap:8px;
-  color:#fff;
-  text-align:center;
-  background-size:cover;
-  background-position:center;
-  background-image:var(--bg);
+.outlet-card {
+  position: relative;
+  flex: 0 0 260px; /* width */
+  height: 150px;
+  border-radius: 18px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: #fff;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-image: var(--bg);
 }
 
 /* Darken overlay */
-.outlet-card::before{
-  content:"";
-  position:absolute; inset:0;
-  background:rgba(0,0,0,.45);
-  backdrop-filter:brightness(.75);
+.outlet-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: brightness(0.75);
 }
 
 /* Logo & brand text above overlay */
 .outlet-card img,
-.outlet-card .brand-name{position:relative; z-index:1;}
+.outlet-card .brand-name {
+  position: relative;
+  z-index: 1;
+}
 
-.outlet-card img{width:60px; height:60px; object-fit:contain;}
-.brand-name{margin:0; font-weight:600; font-size:1rem; color:#fff;}
+.outlet-card img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+.brand-name {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #fff;
+}
 
 /* ===== Infinite scroll animation ===== */
-#outlet-track{
-  animation:scroll-left linear 25s infinite;
+#outlet-track {
+  animation: scroll-left linear 25s infinite;
 }
-@keyframes scroll-left{
-  from{transform:translateX(0);}
-  to  {transform:translateX(calc(-50% - 2rem));} /* ­½ track width */
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-50% - 2rem));
+  } /* ­½ track width */
 }
 
-#copyright{
+#copyright {
   padding-top: 8px;
   padding-bottom: 8px;
   background-color: #000;
-  color: #FFF;
+  color: #fff;
 }
 
 /* =============================================================================== */
@@ -377,11 +411,11 @@ footer ul{
   .navbar-brand img {
     max-height: 40px;
   }
-  .nav-link{
+  .nav-link {
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
-  .container{
+  .container {
     padding-right: 32px;
     padding-left: 32px;
   }
@@ -403,24 +437,24 @@ footer ul{
 
 /* cikaogroup outlet */
 #outlets {
-  background-color: #A7D9F1;
+  background-color: #a7d9f1;
 }
 
 .layout {
-  background-color: #A7D9F1;
+  background-color: #a7d9f1;
   width: 100%;
-    /* width: 1920; sebelumnya, ini error karna fixed
+  /* width: 1920; sebelumnya, ini error karna fixed
       height: 200; dan juga invalid gk ada satuan-nya*/
-  margin:  auto;
+  margin: auto;
   display: flex;
   justify-content: center;
 }
 
-.layout div{
+.layout div {
   width: 300px;
   height: 175px;
   background-color: white;
-  margin: 20px ;
+  margin: 20px;
 }
 .layout .mainEvent {
   width: 975px;
@@ -428,7 +462,7 @@ footer ul{
   background-color: white;
 }
 /* layout outlet utama */
-.mainlayout{
+.mainlayout {
   width: 100%;
   height: 300;
   /* margin:  auto; */
@@ -436,7 +470,7 @@ footer ul{
   justify-content: center;
 }
 
-.mainlayout div{
+.mainlayout div {
   width: 400px;
   height: 200px;
   margin: 20px;
@@ -448,7 +482,6 @@ footer ul{
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   transition: all 1s ease;
-
 }
 
 /* a {
@@ -456,4 +489,3 @@ footer ul{
   font-weight: 700;
   text-decoration: underline; 
 } */
-
