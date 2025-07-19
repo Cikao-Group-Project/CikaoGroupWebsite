@@ -13,6 +13,7 @@ document.querySelectorAll('.section-a').forEach(section => {
 
   let current = 0;
   let autoplayId = startAutoplay();
+  let hasUserInteracted = false;
 
   // Show selected slide
   function showSlide(idx) {
@@ -31,30 +32,43 @@ document.querySelectorAll('.section-a').forEach(section => {
     strip.scrollBy({ left: px, behavior: 'smooth' });
   }
 
-  // Event listeners
-  btnPrev?.addEventListener('click', () => scrollStrip(-thumbs[0].offsetWidth * 3));
-  btnNext?.addEventListener('click', () => scrollStrip(thumbs[0].offsetWidth * 3));
-
-  thumbs.forEach(t => {
-    t.addEventListener('click', () => {
-      stopAutoplay();
-      showSlide(+t.dataset.index);
-    });
-  });
-
-  strip?.addEventListener('scroll', stopAutoplay, { once: true });
-
-  // Autoplay functions
-  function startAutoplay() {
-    return setInterval(() => nextSlide(1), AUTOPLAY_DELAY);
-  }
-
   function stopAutoplay() {
     if (autoplayId) {
       clearInterval(autoplayId);
       autoplayId = null;
     }
   }
+
+  function startAutoplay() {
+    return setInterval(() => {
+      if (!hasUserInteracted) nextSlide(1);
+    }, AUTOPLAY_DELAY);
+  }
+
+  function userInteracted() {
+    hasUserInteracted = true;
+    stopAutoplay();
+  }
+
+  // Event listeners
+  btnPrev?.addEventListener('click', () => {
+    scrollStrip(-thumbs[0].offsetWidth * 3);
+    userInteracted();
+  });
+
+  btnNext?.addEventListener('click', () => {
+    scrollStrip(thumbs[0].offsetWidth * 3);
+    userInteracted();
+  });
+
+  thumbs.forEach(t => {
+    t.addEventListener('click', () => {
+      showSlide(+t.dataset.index);
+      userInteracted();
+    });
+  });
+
+  strip?.addEventListener('scroll', userInteracted, { once: true });
 
   // Initial render
   showSlide(0);
