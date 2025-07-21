@@ -8,6 +8,7 @@ body {
   padding-top: 60px;
   background-color: #000000;
   min-height: 100vh;
+  scroll-behavior: smooth;
 }
 
 /* =========== CUSTOM STYLE ======== */
@@ -332,10 +333,32 @@ footer ul {
   margin-bottom: 0px;
 }
 
-/* Individual outlet card */
+/* Outlet Track Wrapper */
+.outlet-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+/* Continuous Scroll (2x content) */
+#outlet-track {
+  display: flex;
+  width: max-content;
+  animation: scroll-left 60s linear infinite;
+}
+
+/* Keyframes for Smooth Infinite Loop */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 .outlet-card {
   position: relative;
-  flex: 0 0 260px; /* width */
+  flex: 0 0 260px;
   height: 150px;
   border-radius: 18px;
   overflow: hidden;
@@ -348,10 +371,9 @@ footer ul {
   text-align: center;
   background-size: cover;
   background-position: center;
-  background-image: var(--bg);
+  text-decoration: none;
 }
 
-/* Darken overlay */
 .outlet-card::before {
   content: "";
   position: absolute;
@@ -360,7 +382,6 @@ footer ul {
   backdrop-filter: brightness(0.75);
 }
 
-/* Logo & brand text above overlay */
 .outlet-card img,
 .outlet-card .brand-name {
   position: relative;
@@ -372,24 +393,12 @@ footer ul {
   height: 60px;
   object-fit: contain;
 }
+
 .brand-name {
   margin: 0;
   font-weight: 600;
   font-size: 1rem;
   color: #fff;
-}
-
-/* ===== Infinite scroll animation ===== */
-#outlet-track {
-  animation: scroll-left linear 25s infinite;
-}
-@keyframes scroll-left {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(calc(-50% - 2rem));
-  } /* ­½ track width */
 }
 
 #copyright {

@@ -14,7 +14,7 @@
   <!-- Bootstrap CSS & Icons-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
     crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css">
 
   <!-- Google Fonts - Poppins -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,6 +22,101 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="../assets/css/style.css">
+  
+  <style>
+    :root {
+      --blue-main: #166E9C;
+      --blue-bg: #E9F5FC;
+
+      --green-main: #26734A;
+      --green-bg: #E9FCE9;
+
+      --red-main: #B42251;
+      --red-bg: #FCE9F0;
+
+      --yellow-main: #DE7600;
+      --yellow-bg: #FFE7CC;
+
+      --pink-main: #D461E1;
+      --pink-bg: #F9EAFB;
+
+      --purple-main: #5022B4;
+      --purple-bg: #EFEAFB;
+
+      --black-main: #333333;
+      --black-bg: #E6E6E6;
+    }
+
+    .icon-item {
+      text-align: center;
+      padding: 1rem;
+      border-radius: 1rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      text-decoration: none;
+      display: block;
+    }
+
+    .icon-item:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .icon-circle {
+      width: 60px;
+      height: 60px;
+      margin: 0 auto 0.5rem;
+      border-radius: 50%;
+      border: 3px solid;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+    }
+
+    /* Utility color classes */
+    .icon-blue {
+      background-color: var(--blue-bg);
+      color: var(--blue-main);
+      border-color: var(--blue-main);
+    }
+
+    .icon-green {
+      background-color: var(--green-bg);
+      color: var(--green-main);
+      border-color: var(--green-main);
+    }
+
+    .icon-red {
+      background-color: var(--red-bg);
+      color: var(--red-main);
+      border-color: var(--red-main);
+    }
+
+    .icon-yellow {
+      background-color: var(--yellow-bg);
+      color: var(--yellow-main);
+      border-color: var(--yellow-main);
+    }
+
+    .icon-pink {
+      background-color: var(--pink-bg);
+      color: var(--pink-main);
+      border-color: var(--pink-main);
+    }
+
+    .icon-purple {
+      background-color: var(--purple-bg);
+      color: var(--purple-main);
+      border-color: var(--purple-main);
+    }
+
+    .icon-black {
+      background-color: var(--black-bg);
+      color: var(--black-main);
+      border-color: var(--black-main);
+    }
+  </style>
 </head>
 
 <body>
@@ -89,81 +184,77 @@
         </div>
         <div class="col-md-1 text-center mb-4 mb-md-0"></div>
         <div class="col-md-7">
-          <h2 class="fw-bold mb-3">Black White Pool & Cafe</h2>
-          <p>Cari tempat nongkrong yang keren dan serba ada? Black White Pool & Cafe adalah destinasi billiard
-            profesional di Purwakarta dengan fasilitas lengkap! Sambil adu skill di meja billiard, kamu juga bisa
-            menikmati makanan khas Nusantara yang bikin lidah bergoyang. Ada rental PS4 dan Nintendo Switch buat gaming
-            seru, plus area khusus buat yang suka nge-vape atau pakai IQOS. Semua ada di sini—tempat terbaik buat chill
-            bareng teman!</p>
+          <h2 class="fw-bold mb-3">Cikao Park</h2>
+          <p>Liburan santai tapi tetap seru? Cikao Water Park adalah destinasi wajib buat keluarga! Dari kolam ombak
+            yang bikin berasa di pantai hingga kolam anak dan dewasa untuk semua usia, keseruannya nggak ada habisnya.
+            Mau tantangan lebih? Sewa kayak atau pedal boat dan jelajahi air dengan gaya! Yuk, ciptakan momen tak
+            terlupakan di Cikao Water Park!</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- UNIQUE SELLING POINT
-  <section id="usp" class="custom-padding-m">
-    <div class="container">
-      <div class="heading">
-        <h2 class="fw-bold">Yang Ada di Black White Pool & Cafe</h2>
-        <p class="lead mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+  <!-- UNIQUE SELLING POINT-->
+  <section id="USP" class="container">
+    <div class="row justify-content-center">
+      <div class="col-6 col-md-4 col-lg-1 mb-2">
+        <a href="#waterpark" class="icon-item">
+          <div class="icon-circle icon-blue">
+            <i class="bi bi-tsunami"></i>
+          </div>
+          <p>Water Park</p>
+        </a>
       </div>
-      <div class="row usp-item g-0">
-        <div class="col-12 col-md-9 col-xl-4">
-          <div class="usp-image-wrapper">
-            <img src="../assets/images/bw/Image_6.webp" class="usp-image" alt="Kompetisi Lomba">
+      <div class="col-6 col-md-4 col-lg-1 mb-2">
+        <a href="#taman-satwa" class="icon-item">
+          <div class="icon-circle icon-green">
+            <i class="bi bi-feather"></i>
           </div>
-        </div>
-        <div class="col-xl-1"></div>
-        <div class="col-12 col-md-10 col-lg-9 col-xl-4 align-items-center">
-          <div class="p-3">
-            <h3 class="mt-md-0">Kompetisi Lomba</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-              mollit anim id est laborum.</p>
-          </div>
-        </div>
+          <p>Taman Satwa</p>
+        </a>
       </div>
-
-      <div class="row usp-item g-0">
-        <div class="col-12 col-md-9 col-xl-4">
-          <div class="usp-image-wrapper">
-            <img src="../assets/images/bw/Image_6.webp" class="usp-image" alt="Kompetisi Lomba">
+      <div class="col-6 col-md-4 col-lg-1 mb-2">
+        <a href="#kuliner" class="icon-item">
+          <div class="icon-circle icon-red">
+            <i class="bi bi-fork-knife"></i>
           </div>
-        </div>
-        <div class="col-xl-1"></div>
-        <div class="col-12 col-md-10 col-lg-9 col-xl-4 align-items-center">
-          <div class="p-3">
-            <h3 class="mt-md-0">Kompetisi Lomba</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-              mollit anim id est laborum.</p>
-          </div>
-        </div>
+          <p>Kuliner</p>
+        </a>
       </div>
-
-      <div class="row usp-item g-0">
-        <div class="col-12 col-md-9 col-xl-4">
-          <div class="usp-image-wrapper">
-            <img src="../assets/images/bw/Image_6.webp" class="usp-image" alt="Kompetisi Lomba">
+      <div class="col-6 col-md-4 col-lg-1 mb-2">
+        <a href="#area-bermain" class="icon-item">
+          <div class="icon-circle icon-yellow">
+            <i class="bi bi-rocket-takeoff"></i>
           </div>
-        </div>
-        <div class="col-xl-1"></div>
-        <div class="col-12 col-md-10 col-lg-9 col-xl-4 align-items-center">
-          <div class="p-3">
-            <h3 class="mt-md-0">Kompetisi Lomba</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-              mollit anim id est laborum.</p>
-          </div>
-        </div>
+          <p>Area Bermain</p>
+        </a>
       </div>
-  </section> -->
+      <div class="col-6 col-md-4 col-lg-1 mb-2">
+        <a href="#foto-spot" class="icon-item">
+          <div class="icon-circle icon-pink">
+            <i class="bi bi-eye-fill"></i>
+          </div>
+          <p>Foto Spot</p>
+        </a>
+      </div>
+      <div class="col-6 col-md-4 col-lg-1 mb-2">
+        <a href="#taman-bunga" class="icon-item">
+          <div class="icon-circle icon-purple">
+            <i class="bi bi-flower1"></i>
+          </div>
+          <p>Taman Bunga</p>
+        </a>
+      </div>
+      <div class="col-6 col-md-4 col-lg-1 mb-2">
+        <a href="#akses-umum" class="icon-item">
+          <div class="icon-circle icon-black">
+            <i class="bi bi-bank"></i>
+          </div>
+          <p>Pendopo</p>
+        </a>
+      </div>
+    </div>
+  </section>
 
   <section id="waterpark" class="section-a text-center" style="background-color: #F2F9FD; color: #166E9C;">
     <div class="container">
@@ -415,165 +506,112 @@
     </div>
   </section>
 
-  <!-- MENU -->
-  <section id="menu">
-    <div class="container">
-      <div class="row align-items-center justify-content-center">
-        <div class="col-md-4 text-center text-md-start mb-4 mb-md-0">
-          <h2 class="fw-bold">Lihat Menu Digital:</h2>
-        </div>
-        <div class="col-md-1"></div>
-        <div class="col-md-3 text-center align-items-centerxt-md-start text-sm-center text-lg-end">
-          <a href="https://drive.google.com/file/d/16dvzkeBXdeK_d7SrAFwpHDkb-Z6CKFyi/view" target="_blank"
-            class="menu-link">
-            <img src="../assets/images/bw/menu.png" alt="Menu Digital" class="img-fluid menu-cover">
-          </a>
-        </div>
-        <div class="col-md-1"></div>
-      </div>
-    </div>
-  </section>
-
   <!-- OPERATING HOUR -->
-  <section id="hour" class="section-b">
+  <section id="hour" class="section-b" style="background-color: var(--blue-main);">
     <div class="container">
-      <h2 class="fw-bold text-center mb-5">Jam Operasional</h2>
       <div class="row align-items-center justify-content-center">
-        <div class="col-md-4 text-center mb-4">
-          <h2 class="fw-bold">WEEKDAY</h2>
-          <p>PUKUL 16:00 - 01:00 WIB</p>
+        <div class="col-md-6 text-center">
+          <h2 class="fw-bold">Jam Operasional</h2>
         </div>
-        <div class="col-md-2"></div>
-        <div class="col-md-4 text-center mb-4">
-          <h2 class="fw-bold">WEEKDAY</h2>
-          <p>PUKUL 16:00 - 21:00 WIB</p>
+        <div class="col-md-6 text-center">
+          <h2 class="fw-bold">WEEKDAY & WEEKEND</h2>
+          <p>PUKUL 08:00 - 17:00 WIB</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- PRICELIST -->
-  <section id="price" class="section-b">
+  <section id="price" class="section-b" style="background-color: var(--green-main);">
     <div class="container">
       <h2 class="fw-bold text-center mb-5">Daftar Harga</h2>
       <div class="row justify-content-center gy-5">
-        <div class="col-sm-1"></div>
-        <div class="col-lg-4 col-sm-11">
-          <h2 class="fw-bold text-center mb-4">Pool</h2>
+        <div class="col-lg-7 col-sm-12">
           <table class="table table-borderless text-white fs-5">
             <thead>
               <tr class="fw-bold">
-                <th scope="col">Paket</th>
-                <th scope="col" class="text-center">PS4</th>
-                <th scope="col" class="text-center">Nintendo<br>Switch</th>
+                <th scope="col"></th>
+                <th scope="col" class="text-center">Weekdays</th>
+                <th scope="col" class="text-center">Weekend</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>1 Jam</td>
-                <td class="text-center">15K</td>
-                <td class="text-center">24K</td>
+                <td>Pintu Utama</td>
+                <td class="text-center">Rp20.000</td>
+                <td class="text-center">Rp20.000</td>
               </tr>
               <tr>
-                <td>3 Jam</td>
-                <td class="text-center">40K</td>
-                <td class="text-center">65K</td>
+                <td>Water Park</td>
+                <td class="text-center">Rp30.000</td>
+                <td class="text-center">Rp50.000</td>
               </tr>
               <tr>
-                <td>5 Jam</td>
-                <td class="text-center">65K</td>
-                <td class="text-center">105K</td>
+                <td>Mini Zoo</td>
+                <td class="text-center">Rp20.000</td>
+                <td class="text-center">Rp30.000</td>
+              </tr>
+              <tr>
+                <td>Rumah Ilusi</td>
+                <td class="text-center">Rp30.000</td>
+                <td class="text-center">Rp30.000</td>
               </tr>
             </tbody>
           </table>
           <p class="small text-start mt-4">Catatan: Semua device sudah include 2 controllers. Menambah controller @5K
           </p>
         </div>
-        <div class="col-lg-2 col-sm-1"></div>
-        <div class="col-lg-4 col-sm-11">
-          <h2 class="fw-bold text-center mb-4">Arcade</h2>
-
-          <table class="table table-borderless text-white fs-5">
-            <thead>
-              <tr class="fw-bold">
-                <th scope="col">Paket</th>
-                <th scope="col" class="text-center">PS4</th>
-                <th scope="col" class="text-center">Nintendo<br>Switch</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1 Jam</td>
-                <td class="text-center">15K</td>
-                <td class="text-center">24K</td>
-              </tr>
-              <tr>
-                <td>3 Jam</td>
-                <td class="text-center">40K</td>
-                <td class="text-center">65K</td>
-              </tr>
-              <tr>
-                <td>5 Jam</td>
-                <td class="text-center">65K</td>
-                <td class="text-center">105K</td>
-              </tr>
-            </tbody>
-          </table>
-          <p class="small text-start mt-4">Catatan: Semua device sudah include 2 controllers. Menambah controller @5K
-          </p>
-        </div>
-        <div class="col-lg-1"></div>
       </div>
     </div>
 
     <!-- CTA -->
     <div class="text-center mt-5">
       <a href="https://wa.me/6281212345678" class="btn btn-light text-dark fw-bold px-5 py-3 w-md-auto">
-        Reservasi Sekarang!
+        Pesan Tiket Sekarang!
       </a>
     </div>
   </section>
 
   <!-- SOCIAL MEDIA -->
-  <section id="social" class="section-b">
-    <div class="container">
-      <div class="row align-items-center gy-4">
-        <div class="col-md-6">
-          <h2 class="fw-bold mb-4">FOLLOW UNTUK TAU<br>PROMO DAN EVENT<br>MENARIK LAINNYA!</h2>
-          <br><br><br><br><br>
-          <h5 class="fw-bold mt-4 mb-3">Hubungi Kami</h5>
-          <ul class="list-unstyled fs-5">
-            <li class="mb-2">
-              <a href="https://wa.me/6281212345678" target="_blank" class="social-link">
-                <i class="bi bi-whatsapp me-3"></i>0812-1234-5678
-              </a>
-            </li>
-            <li class="mb-2">
-              <a href="https://www.instagram.com/blackwhite.pwk/" target="_blank" class="social-link">
-                <i class="bi bi-instagram me-3"></i>@blackwhite.pwk
-              </a>
-            </li>
-            <li class="mb-2">
-              <a href="https://www.tiktok.com/@blackwhite.pwk" target="_blank" class="social-link">
-                <i class="bi bi-tiktok me-3"></i>@blackwhite.pwk
-              </a>
-            </li>
-            <li class="mb-2">
-              <a href="https://www.facebook.com/BlackWhitePoolCafe" target="_blank" class="social-link">
-                <i class="bi bi-facebook me-3"></i>Black White
-              </a>
-            </li>
-          </ul>
-        </div>
+  <section id="social" class="section-b"">
+    <div class=" container">
+    <div class="row align-items-center gy-4">
+      <div class="col-md-6">
+        <h2 class="fw-bold mb-4">FOLLOW UNTUK TAU<br>PROMO DAN EVENT<br>MENARIK LAINNYA!</h2>
+        <br><br><br><br><br>
+        <h5 class="fw-bold mt-4 mb-3">Hubungi Kami</h5>
+        <ul class="list-unstyled fs-5">
+          <li class="mb-2">
+            <a href="https://wa.me/6281212345678" target="_blank" class="social-link">
+              <i class="bi bi-whatsapp me-3"></i>0812-1234-5678
+            </a>
+          </li>
+          <li class="mb-2">
+            <a href="https://www.instagram.com/blackwhite.pwk/" target="_blank" class="social-link">
+              <i class="bi bi-instagram me-3"></i>@blackwhite.pwk
+            </a>
+          </li>
+          <li class="mb-2">
+            <a href="https://www.tiktok.com/@blackwhite.pwk" target="_blank" class="social-link">
+              <i class="bi bi-tiktok me-3"></i>@blackwhite.pwk
+            </a>
+          </li>
+          <li class="mb-2">
+            <a href="https://www.facebook.com/BlackWhitePoolCafe" target="_blank" class="social-link">
+              <i class="bi bi-facebook me-3"></i>Black White
+            </a>
+          </li>
+        </ul>
+      </div>
 
-        <div class="col-md-6">
-          <div class="ratio ratio-1x1 rounded-4 overflow-hidden shadow">
-            <iframe src="https://www.instagram.com/blackwhite.pwk/embed" frameborder="0" allowtransparency="true"
-              allowfullscreen scrolling="no" style="border:none; width:100%; height:100%;">
-            </iframe>
-          </div>
+      <div class="col-md-6">
+        <div class="ratio ratio-1x1 rounded-4 overflow-hidden shadow">
+          <iframe src="https://www.instagram.com/officialcikaopark/embed" frameborder="0" allowtransparency="true"
+            allowfullscreen scrolling="no" style="border:none; width:100%; height:100%;">
+          </iframe>
         </div>
       </div>
+    </div>
     </div>
   </section>
 
@@ -605,50 +643,58 @@
     </div>
   </section>
 
-  <footer id="footer" class="text-center justify-content-center align-items-center">
+  <!-- Footer -->
+  <footer class="text-center justify-content-center align-items-center">
     <div class="overflow-hidden">
       <h2 class="mb-4 lead">Jelajahi Outlet Cikao Group Lainnya</h2>
 
-      <!-- Infinite scroll track -->
-      <div id="outlet-track" class="d-flex gap-4 flex-nowrap mb-3">
-        <!-- === 7 outlet cards (duplikat otomatis di JS) === -->
-        <div class="outlet-card" style="background-image: url(../assets/images/cg/outlet-cikaopark.webp)">
-          <img src="../assets/logos/logo_cikaopark.svg" alt="🦜">
-          <p class="brand-name">Cikao Park</p>
-        </div>
+      <!-- Outlet Track -->
+      <div class="outlet-wrapper">
+        <div id="outlet-track" class="d-flex gap-4 flex-nowrap mb-3">
+          <!-- List of outlets (wrapped in anchor tag) -->
+          <a class="outlet-card" href="../cikaopark/index.html"
+            style="background-image: url(../assets/images/cg/outlet-cikaopark.webp)">
+            <img src="../assets/logos/logo_cikaopark.svg" alt="🦜">
+            <p class="brand-name">Cikao Park</p>
+          </a>
 
-        <div class="outlet-card" style="background-image: url(../assets/images/cg/outlet-watervilla.webp)">
-          <img src="../assets/logos/logo_watervilla.webp" alt="🛖">
-          <p class="brand-name">Water Villa</p>
-        </div>
+          <a class="outlet-card" href="../watervilla/index.html"
+            style="background-image: url(../assets/images/cg/outlet-watervilla.webp)">
+            <img src="../assets/logos/logo_watervilla.webp" alt="🛖">
+            <p class="brand-name">Water Villa</p>
+          </a>
 
-        <div class="outlet-card" style="background-image: url(../assets/images/cg/outlet-castlecafe.webp)">
-          <img src="../assets/logos/logo_castlecafeTransparan.webp" alt="🏰">
-          <p class="brand-name">Castle Cafe</p>
-        </div>
+          <a class="outlet-card" href="../castlecafe/index.html"
+            style="background-image: url(../assets/images/cg/outlet-castlecafe.webp)">
+            <img src="../assets/logos/logo_castlecafeTransparan.webp" alt="🏰">
+            <p class="brand-name">Castle Cafe</p>
+          </a>
 
-        <div class="outlet-card" style="background-image: url(../assets/images/cg/outlet-chantilly.webp)">
-          <img src="../assets/logos/logo_chantilly.webp" alt="🍰">
-          <p class="brand-name">Chantilly</p>
-        </div>
+          <a class="outlet-card" href="../chantilly/index.html"
+            style="background-image: url(../assets/images/cg/outlet-chantilly.webp)">
+            <img src="../assets/logos/logo_chantilly.webp" alt="🍰">
+            <p class="brand-name">Chantilly</p>
+          </a>
 
-        <div class="outlet-card" style="background-image: url(../assets/images/cg/outlet-blackwhite1.webp)">
-          <img src="../assets/logos/logo_bw.webp" alt="🎱">
-          <p class="brand-name">BW Pool & Cafe</p>
-        </div>
+          <a class="outlet-card" href="../bw/index.html"
+            style="background-image: url(../assets/images/cg/outlet-blackwhite1.webp)">
+            <img src="../assets/logos/logo_bw.webp" alt="🎱">
+            <p class="brand-name">BW Pool & Cafe</p>
+          </a>
 
-        <div class="outlet-card" style="background-image: url(../assets/images/cg/outlet-angkringan.webp)">
-          <img src="../assets/logos/logo_abcTransparan.webp" alt="🍢">
-          <p class="brand-name">ABC Angkringan</p>
-        </div>
+          <a class="outlet-card" href="../abc/index.html"
+            style="background-image: url(../assets/images/cg/outlet-angkringan.webp)">
+            <img src="../assets/logos/logo_abcTransparan.webp" alt="🍢">
+            <p class="brand-name">ABC Angkringan</p>
+          </a>
 
-        <div class="outlet-card" style="background-image: url(../assets/images/cg/outlet-castlefashionwebp.webp)">
-          <img src="../assets/logos/logo_castlefashionTransparan.webp" alt="👗">
-          <p class="brand-name">Castle Fashion</p>
+          <a class="outlet-card" href="../castlefashion/index.html"
+            style="background-image: url(../assets/images/cg/outlet-castlefashionwebp.webp)">
+            <img src="../assets/logos/logo_castlefashionTransparan.webp" alt="👗">
+            <p class="brand-name">Castle Fashion</p>
+          </a>
         </div>
-
       </div>
-      <br>
     </div>
 
     <div id="about-us" class="section py-5 text-start">
@@ -723,6 +769,7 @@
 
     <div id="copyright">© 2025 Cikao Group - All Rights Reserved</div>
   </footer>
+
   <!-- Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
     crossorigin="anonymous"></script>
