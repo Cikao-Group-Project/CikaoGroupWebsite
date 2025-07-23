@@ -11,6 +11,10 @@ body {
   scroll-behavior: smooth;
 }
 
+p {
+  text-align: justify;
+}
+
 /* =========== CUSTOM STYLE ======== */
 .custom-padding-m {
   padding-top: 64px;
