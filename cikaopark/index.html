@@ -22,7 +22,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="../assets/css/style.css">
-  
+
   <style>
     :root {
       --blue-main: #166E9C;
@@ -49,18 +49,31 @@
 
     .icon-item {
       text-align: center;
+      color: #000000;
+      font-weight: 500;
+      text-decoration: none;
       padding: 1rem;
       border-radius: 1rem;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.1s ease;
       cursor: pointer;
-      text-decoration: none;
       display: block;
     }
 
     .icon-item:hover {
+      color: #202020;
       transform: translateY(-4px);
       box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
     }
+
+    .icon-item p {
+      min-height: 2.5em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      line-height: 1.2;
+    }
+
 
     .icon-circle {
       width: 60px;
@@ -162,7 +175,7 @@
   </nav>
 
   <!-- CTA FLOATING -->
-  <a href="https://wa.me/6281212345678"
+  <a href="https://wa.me/628111239933"
     class="btn-floating-wa d-flex align-items-center justify-content-center gap-2 fw-semibold">
     <span class="d-none d-md-inline">Pesan Tiket Cikao Park</span>
     <i class="bi bi-whatsapp fs-5"></i>
@@ -195,63 +208,69 @@
   </section>
 
   <!-- UNIQUE SELLING POINT-->
-  <section id="USP" class="container">
-    <div class="row justify-content-center">
-      <div class="col-6 col-md-4 col-lg-1 mb-2">
-        <a href="#waterpark" class="icon-item">
-          <div class="icon-circle icon-blue">
-            <i class="bi bi-tsunami"></i>
-          </div>
-          <p>Water Park</p>
-        </a>
+  <section id="USP" class="section-b">
+    <div class="container">
+      <div class="heading col-lg-8">
+        <h2 class="fw-bold">Ada Apa Aja di Cikao Park?</h2>
+        <p class="lead mb-4">✨ Luas dan Lengkap Banget, Yuk Jelajahi Semua! 🔍</p>
       </div>
-      <div class="col-6 col-md-4 col-lg-1 mb-2">
-        <a href="#taman-satwa" class="icon-item">
-          <div class="icon-circle icon-green">
-            <i class="bi bi-feather"></i>
-          </div>
-          <p>Taman Satwa</p>
-        </a>
-      </div>
-      <div class="col-6 col-md-4 col-lg-1 mb-2">
-        <a href="#kuliner" class="icon-item">
-          <div class="icon-circle icon-red">
-            <i class="bi bi-fork-knife"></i>
-          </div>
-          <p>Kuliner</p>
-        </a>
-      </div>
-      <div class="col-6 col-md-4 col-lg-1 mb-2">
-        <a href="#area-bermain" class="icon-item">
-          <div class="icon-circle icon-yellow">
-            <i class="bi bi-rocket-takeoff"></i>
-          </div>
-          <p>Area Bermain</p>
-        </a>
-      </div>
-      <div class="col-6 col-md-4 col-lg-1 mb-2">
-        <a href="#foto-spot" class="icon-item">
-          <div class="icon-circle icon-pink">
-            <i class="bi bi-eye-fill"></i>
-          </div>
-          <p>Foto Spot</p>
-        </a>
-      </div>
-      <div class="col-6 col-md-4 col-lg-1 mb-2">
-        <a href="#taman-bunga" class="icon-item">
-          <div class="icon-circle icon-purple">
-            <i class="bi bi-flower1"></i>
-          </div>
-          <p>Taman Bunga</p>
-        </a>
-      </div>
-      <div class="col-6 col-md-4 col-lg-1 mb-2">
-        <a href="#akses-umum" class="icon-item">
-          <div class="icon-circle icon-black">
-            <i class="bi bi-bank"></i>
-          </div>
-          <p>Pendopo</p>
-        </a>
+      <div class="row justify-content-center">
+        <div class="col-6 col-md-4 col-lg-1 mb-2">
+          <a href="#waterpark" class="icon-item">
+            <div class="icon-circle icon-blue">
+              <i class="bi bi-tsunami"></i>
+            </div>
+            <p>Water Park</p>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-1 mb-2">
+          <a href="#taman-satwa" class="icon-item">
+            <div class="icon-circle icon-green">
+              <i class="bi bi-feather"></i>
+            </div>
+            <p>Taman Satwa</p>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-1 mb-2">
+          <a href="#wahana" class="icon-item">
+            <div class="icon-circle icon-red">
+              <i class="bi bi-rocket-takeoff"></i>
+            </div>
+            <p>Wahana</p>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-1 mb-2">
+          <a href="#kuliner" class="icon-item">
+            <div class="icon-circle icon-yellow">
+              <i class="bi bi-fork-knife"></i>
+            </div>
+            <p>Kuliner</p>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-1 mb-2">
+          <a href="#taman-bunga" class="icon-item">
+            <div class="icon-circle icon-pink">
+              <i class="bi bi-flower1"></i>
+            </div>
+            <p>Taman Bunga</p>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-1 mb-2">
+          <a href="#rumah-ilusi" class="icon-item">
+            <div class="icon-circle icon-purple">
+              <i class="bi bi-eye-fill"></i>
+            </div>
+            <p>Rumah Ilusi</p>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-1 mb-2">
+          <a href="#pendopo" class="icon-item">
+            <div class="icon-circle icon-black">
+              <i class="bi bi-bank"></i>
+            </div>
+            <p>Pendopo</p>
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -558,7 +577,7 @@
               </tr>
             </tbody>
           </table>
-          <p class="small text-start mt-4">Catatan: Semua device sudah include 2 controllers. Menambah controller @5K
+          <!-- <p class="small text-start mt-4">Catatan: Semua device sudah include 2 controllers. Menambah controller @5K -->
           </p>
         </div>
       </div>
@@ -566,7 +585,7 @@
 
     <!-- CTA -->
     <div class="text-center mt-5">
-      <a href="https://wa.me/6281212345678" class="btn btn-light text-dark fw-bold px-5 py-3 w-md-auto">
+      <a href="https://wa.me/628111239933" class="btn btn-light text-dark fw-bold px-5 py-3 w-md-auto">
         Pesan Tiket Sekarang!
       </a>
     </div>
@@ -582,23 +601,23 @@
         <h5 class="fw-bold mt-4 mb-3">Hubungi Kami</h5>
         <ul class="list-unstyled fs-5">
           <li class="mb-2">
-            <a href="https://wa.me/6281212345678" target="_blank" class="social-link">
-              <i class="bi bi-whatsapp me-3"></i>0812-1234-5678
+            <a href="https://wa.me/628111239933" target="_blank" class="social-link">
+              <i class="bi bi-whatsapp me-3"></i>0811-1239-933
             </a>
           </li>
           <li class="mb-2">
-            <a href="https://www.instagram.com/blackwhite.pwk/" target="_blank" class="social-link">
-              <i class="bi bi-instagram me-3"></i>@blackwhite.pwk
+            <a href="https://www.instagram.com/officialcikaopark/" target="_blank" class="social-link">
+              <i class="bi bi-instagram me-3"></i>@officialcikaopark
             </a>
           </li>
           <li class="mb-2">
-            <a href="https://www.tiktok.com/@blackwhite.pwk" target="_blank" class="social-link">
-              <i class="bi bi-tiktok me-3"></i>@blackwhite.pwk
+            <a href="https://www.tiktok.com/@officialcikaopark" target="_blank" class="social-link">
+              <i class="bi bi-tiktok me-3"></i>@officialcikaopark
             </a>
           </li>
           <li class="mb-2">
-            <a href="https://www.facebook.com/BlackWhitePoolCafe" target="_blank" class="social-link">
-              <i class="bi bi-facebook me-3"></i>Black White
+            <a href="https://www.facebook.com/CikaoPark/" target="_blank" class="social-link">
+              <i class="bi bi-facebook me-3"></i>CikaoPark
             </a>
           </li>
         </ul>
@@ -625,8 +644,8 @@
         <div class="col-12 col-md-8">
           <div class="map ratio ratio-16x9 rounded">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.516163111817!2d107.43150798451614!3d-6.582572147341399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e690f9f9d9a4a73%3A0xd79e195f7889ae31!2sBlack%20White%20Pool%20and%20Cafe!5e0!3m2!1sen!2sid!4v1752244990920!5m2!1sen!2sid"
-              width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.5182360323697!2d107.44641307640352!3d-6.582312464348258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e690f97f48488b3%3A0xd4b6641a0785946a!2sCikao%20Park!5e0!3m2!1sen!2sid!4v1753284669707!5m2!1sen!2sid"
+              width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
@@ -636,7 +655,7 @@
 
     <!-- CTA -->
     <div class="text-center mt-5">
-      <a href="https://maps.app.goo.gl/PpkCphmgArBic9Qu7" target="_blank"
+      <a href="https://maps.app.goo.gl/zkorVxCKMAJ4kGZUA" target="_blank"
         class="btn btn-light text-dark fw-bold px-5 py-3 w-md-auto">
         Buka Dengan Google Maps
       </a>
