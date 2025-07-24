@@ -148,17 +148,17 @@ p {
   max-height: 150px;
 }
 
-#USP .col-lg-1{
-  width: 13%;
-  color: #000000;
-}
-
 #exploreOutlet {
   background-color: #a7d9f1;
   color: #000000;
 }
 #mainOutlet {
   background-color: #c1eafd;
+  color: #000000;
+}
+
+#usp .col-lg-1{
+  width: 13%;
   color: #000000;
 }
 
