@@ -2,7 +2,7 @@
 const AUTOPLAY_DELAY = 2000; // 2s
 
 /* ------- INIT FOR EACH SECTION -------- */
-document.querySelectorAll('.section-a').forEach(section => {
+document.querySelectorAll('.gallery').forEach(section => {
   const mainImg   = section.querySelector('#main-slide img');
   const thumbs    = Array.from(section.querySelectorAll('.thumb'));
   const strip     = section.querySelector('#thumb-strip');
