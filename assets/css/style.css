@@ -472,6 +472,7 @@ footer ul {
       height: 200; dan juga invalid gk ada satuan-nya*/
   margin: auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -492,19 +493,23 @@ footer ul {
   height: 300;
   /* margin:  auto; */
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  gap: 20px;
 }
 
 .mainlayout div {
-  width: 400px;
-  height: 200px;
-  margin: 20px;
+  flex: 1 1 100%;
+  max-width: 500px;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 #slideMainOutlet {
-  width: 400px;
-  height: 220px;
+  width: 100%;
+  height: auto;
   border-radius: 10px;
+  object-fit: cover;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   transition: all 1s ease;
 }
