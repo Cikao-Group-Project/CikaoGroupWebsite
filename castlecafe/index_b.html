@@ -22,6 +22,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="../assets/css/style.css">
+  <style>
+    #usp p, #usp h3, #usp {
+      color: #0490C8;
+    }
+  </style>
 </head>
 
 <body>
@@ -103,19 +108,45 @@
   <section id="usp" class="custom-padding-m">
     <div class="container">
       <div class="heading">
-        <h2 class="fw-bold">Yang Ada di Castle Cafe</h2>
-        <p class="lead text-center mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        <h2 class="fw-bold mb-4">Yang Ada di Castle Cafe</h2>
+        <!-- <p class="lead text-center mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p> -->
       </div>
       <div class="row usp-item g-0">
-        <div class="col-12 col-md-9 col-xl-4">
-          <div class="usp-image-wrapper">
-            <img src="../assets/images/cc/usp_32.webp" class="usp-image" alt="Kompetisi Lomba">
+        <div class="gallery col-md-10 col-lg-9 col-xl-7 align-items-center justify-content-center">
+          <!-- ===== Main Display ===== -->
+          <div id="main-slide" class="mx-auto rounded-4 overflow-hidden shadow-lg mb-4" style="max-width: 900px;">
+            <img src="../assets/images/cc/usp_11.webp" alt="slide" class="w-100 h-100 object-fit-cover">
           </div>
-        </div>
-        <div class="col-xl-1"></div>
-        <div class="col-12 col-md-10 col-lg-9 col-xl-4 align-items-center">
+
+          <!-- ===== Navigation Bar ===== -->
+          <div class="d-flex align-items-center justify-content-center gap-3">
+
+            <!-- ← arrow -->
+            <button id="nav-prev" class="btn-nav rounded-circle d-flex align-items-center justify-content-center">
+              <i class="bi bi-arrow-left-short fs-1"></i>
+            </button>
+
+            <!-- Thumbnails wrapper (mask) -->
+            <div id="thumb-wrapper" class="flex-grow-1 overflow-hidden">
+              <div id="thumb-strip" class="d-flex flex-nowrap gap-3">
+                <!-- Thumbnails -->
+                <img src="../assets/images/cc/usp_11.webp" data-index="0" class="thumb active">
+                <img src="../assets/images/cc/usp_13.webp" data-index="2" class="thumb">
+                <img src="../assets/images/cc/usp_14.webp" data-index="3" class="thumb">
+                <img src="../assets/images/cc/usp_15.webp" data-index="4" class="thumb">
+                <img src="../assets/images/cc/usp_16.webp" data-index="5" class="thumb">
+                <img src="../assets/images/cc/usp_17.webp" data-index="6" class="thumb">
+                <!-- add more if needed -->
+              </div>
+            </div>
+
+            <!-- → arrow -->
+            <button id="nav-next" class="btn-nav rounded-circle d-flex align-items-center justify-content-center">
+              <i class="bi bi-arrow-right-short fs-1"></i>
+            </button>
+          </div>
           <div class="p-3">
-            <h3 class="mt-md-0">Resto-cafe dengan bangunan megah</h3>
+            <h3 class="mt-4">Resto-cafe dengan bangunan megah</h3>
             <p>Castle Cafe hadir dengan arsitektur megah bergaya kastil yang langsung mencuri perhatian siapa pun yang
               lewat. Dengan nuansa klasik dan elegan seperti di negeri dongeng, setiap sudut bangunan menjadi spot foto
               yang memesona sekaligus menghadirkan pengalaman bersantap yang tak terlupakan. Di sini, makan bukan
@@ -125,33 +156,40 @@
       </div>
 
       <div class="row usp-item g-0">
-        <div class="col-12 col-md-9 col-xl-4">
-          <div class="usp-image-wrapper">
-            <img src="../assets/images/cc/usp_21.webp" class="usp-image" alt="Kompetisi Lomba">
+        <div class="gallery col-md-10 col-lg-9 col-xl-7 align-items-center justify-content-center">
+          <!-- ===== Main Display ===== -->
+          <div id="main-slide" class="mx-auto rounded-4 overflow-hidden shadow-lg mb-4"
+            style="max-width: 900px; aspect-ratio: 16/14;">
+            <img src="../assets/images/cc/usp_31.webp" alt="slide" class="w-100 h-100 object-fit-cover">
           </div>
-        </div>
-        <div class="col-xl-1"></div>
-        <div class="col-12 col-md-10 col-lg-9 col-xl-4 align-items-center">
-          <div class="p-3">
-            <h3 class="mt-md-0">Replika Menara Eiffel</h3>
-            <p>Tak perlu jauh-jauh ke Paris, karena replika Menara Eiffel setinggi belasan meter siap memanjakan mata
-              dan lensa kamera Anda di Castle Cafe. Struktur ikonik ini menjadi magnet bagi para pencari spot foto
-              estetik, pasangan muda, hingga keluarga yang ingin merasakan sentuhan romantis ala Prancis dalam suasana
-              yang fun dan nyaman.</p>
-          </div>
-        </div>
-      </div>
 
-      <div class="row usp-item g-0">
-        <div class="col-12 col-md-9 col-xl-4">
-          <div class="usp-image-wrapper">
-            <img src="../assets/images/cc/Image_2.jpg" class="usp-image" alt="Kompetisi Lomba">
+          <!-- ===== Navigation Bar ===== -->
+          <div class="d-flex align-items-center justify-content-center gap-3">
+
+            <!-- ← arrow -->
+            <button id="nav-prev" class="btn-nav rounded-circle d-flex align-items-center justify-content-center">
+              <i class="bi bi-arrow-left-short fs-1"></i>
+            </button>
+
+            <!-- Thumbnails wrapper (mask) -->
+            <div id="thumb-wrapper" class="flex-grow-1 overflow-hidden">
+              <div id="thumb-strip" class="d-flex flex-nowrap gap-3">
+                <!-- Thumbnails -->
+                <img src="../assets/images/cc/usp_31.webp" data-index="0" class="thumb active">
+                <img src="../assets/images/cc/usp_32.webp" data-index="1" class="thumb">
+                <img src="../assets/images/cc/usp_33.webp" data-index="2" class="thumb">
+                <img src="../assets/images/cc/usp_34.webp" data-index="3" class="thumb">
+                <!-- add more if needed -->
+              </div>
+            </div>
+
+            <!-- → arrow -->
+            <button id="nav-next" class="btn-nav rounded-circle d-flex align-items-center justify-content-center">
+              <i class="bi bi-arrow-right-short fs-1"></i>
+            </button>
           </div>
-        </div>
-        <div class="col-xl-1"></div>
-        <div class="col-12 col-md-10 col-lg-9 col-xl-4 align-items-center">
           <div class="p-3">
-            <h3 class="mt-md-0">Menara Disney</h3>
+            <h3 class="mt-4">Menara Disney</h3>
             <p>Lengkapi pengalaman fantasi Anda dengan kehadiran Menara Disney yang menjulang indah, membawa imajinasi
               kembali ke masa kecil. Landmark ini tidak hanya menjadi ikon Castle Cafe, tapi juga simbol bahwa tempat
               ini adalah rumah bagi suasana ceria, penuh warna, dan cocok untuk semua generasi—baik anak-anak maupun
@@ -161,15 +199,58 @@
       </div>
 
       <div class="row usp-item g-0">
-        <div class="col-12 col-md-9 col-xl-4">
-          <div class="usp-image-wrapper">
-            <img src="../assets/images/cc/Image_2.jpg" class="usp-image" alt="Kompetisi Lomba">
+        <div class="gallery col-md-10 col-lg-9 col-xl-7 align-items-center justify-content-center">
+          <!-- ===== Main Display ===== -->
+          <div id="main-slide" class="mx-auto rounded-4 overflow-hidden shadow-lg mb-4" style="max-width: 900px;">
+            <img src="../assets/images/cc/usp_21.webp" alt="slide" class="w-100 h-100 object-fit-cover"
+              style="object-position: 0 -110px;">
+          </div>
+          <div class="p-3">
+            <h3 class="mt-2">Replika Menara Eiffel</h3>
+            <p>Tak perlu jauh-jauh ke Paris, karena replika Menara Eiffel setinggi belasan meter siap memanjakan mata
+              dan lensa kamera Anda di Castle Cafe. Struktur ikonik ini menjadi magnet bagi para pencari spot foto
+              estetik, pasangan muda, hingga keluarga yang ingin merasakan sentuhan romantis ala Prancis dalam suasana
+              yang fun dan nyaman.</p>
           </div>
         </div>
-        <div class="col-xl-1"></div>
-        <div class="col-12 col-md-10 col-lg-9 col-xl-4 align-items-center">
+      </div>
+
+      <div class="row usp-item g-0">
+        <div class="gallery col-md-10 col-lg-9 col-xl-7 align-items-center justify-content-center">
+          <!-- ===== Main Display ===== -->
+          <div id="main-slide" class="mx-auto rounded-4 overflow-hidden shadow-lg mb-4" style="max-width: 900px;">
+            <img src="../assets/images/cc/usp_41.webp" alt="slide" class="w-100 h-100 object-fit-cover">
+          </div>
+
+          <!-- ===== Navigation Bar ===== -->
+          <div class="d-flex align-items-center justify-content-center gap-3">
+
+            <!-- ← arrow -->
+            <button id="nav-prev" class="btn-nav rounded-circle d-flex align-items-center justify-content-center">
+              <i class="bi bi-arrow-left-short fs-1"></i>
+            </button>
+
+            <!-- Thumbnails wrapper (mask) -->
+            <div id="thumb-wrapper" class="flex-grow-1 overflow-hidden">
+              <div id="thumb-strip" class="d-flex flex-nowrap gap-3">
+                <!-- Thumbnails -->
+                <img src="../assets/images/cc/usp_41.webp" data-index="0" class="thumb active">
+                <img src="../assets/images/cc/usp_42.webp" data-index="1" class="thumb">
+                <img src="../assets/images/cc/usp_43.webp" data-index="2" class="thumb">
+                <img src="../assets/images/cc/usp_44.webp" data-index="3" class="thumb">
+                <img src="../assets/images/cc/usp_45.webp" data-index="4" class="thumb">
+                <img src="../assets/images/cc/usp_46.webp" data-index="5" class="thumb">
+                <!-- add more if needed -->
+              </div>
+            </div>
+
+            <!-- → arrow -->
+            <button id="nav-next" class="btn-nav rounded-circle d-flex align-items-center justify-content-center">
+              <i class="bi bi-arrow-right-short fs-1"></i>
+            </button>
+          </div>
           <div class="p-3">
-            <h3 class="mt-md-0">Makanan pasta, steak, jepang, dan lokal</h3>
+            <h3 class="mt-4">Makanan pasta, steak, jepang, dan lokal</h3>
             <p>Castle Cafe memanjakan lidah Anda dengan pilihan menu internasional dan lokal yang lengkap—mulai dari
               pasta creamy, steak juicy, sushi segar khas Jepang, hingga hidangan tradisional Indonesia yang kaya rasa.
               Semua disajikan dengan plating cantik dan bahan berkualitas, menjadikan setiap kunjungan sebagai perayaan
@@ -179,15 +260,43 @@
       </div>
 
       <div class="row usp-item g-0">
-        <div class="col-12 col-md-9 col-xl-4">
-          <div class="usp-image-wrapper">
-            <img src="../assets/images/cc/Image_2.jpg" class="usp-image" alt="Kompetisi Lomba">
+        <div class="gallery col-md-10 col-lg-9 col-xl-7 align-items-center justify-content-center">
+          <!-- ===== Main Display ===== -->
+          <div id="main-slide" class="mx-auto rounded-4 overflow-hidden shadow-lg mb-4" style="max-width: 900px;">
+            <img src="../assets/images/cc/usp_41.webp" alt="slide" class="w-100 h-100 object-fit-cover">
           </div>
-        </div>
-        <div class="col-xl-1"></div>
-        <div class="col-12 col-md-10 col-lg-9 col-xl-4 align-items-center">
+
+          <!-- ===== Navigation Bar ===== -->
+          <div class="d-flex align-items-center justify-content-center gap-3">
+
+            <!-- ← arrow -->
+            <button id="nav-prev" class="btn-nav rounded-circle d-flex align-items-center justify-content-center">
+              <i class="bi bi-arrow-left-short fs-1"></i>
+            </button>
+
+            <!-- Thumbnails wrapper (mask) -->
+            <div id="thumb-wrapper" class="flex-grow-1 overflow-hidden">
+              <div id="thumb-strip" class="d-flex flex-nowrap gap-3">
+                <!-- Thumbnails -->
+                <img src="../assets/images/cc/usp_41.webp" data-index="0" class="thumb active">
+                <img src="../assets/images/cc/usp_42.webp" data-index="1" class="thumb">
+                <img src="../assets/images/cc/usp_43.webp" data-index="2" class="thumb">
+                <img src="../assets/images/cc/usp_44.webp" data-index="3" class="thumb">
+                <img src="../assets/images/cc/usp_45.webp" data-index="4" class="thumb">
+                <img src="../assets/images/cc/usp_46.webp" data-index="5" class="thumb">
+                <img src="../assets/images/cc/Image_7.webp" data-index="6" class="thumb">
+                <img src="../assets/images/cc/image_8.JPG" data-index="7" class="thumb">
+                <!-- add more if needed -->
+              </div>
+            </div>
+
+            <!-- → arrow -->
+            <button id="nav-next" class="btn-nav rounded-circle d-flex align-items-center justify-content-center">
+              <i class="bi bi-arrow-right-short fs-1"></i>
+            </button>
+          </div>
           <div class="p-3">
-            <h3 class="mt-md-0">Jual kartu pokemon, Castle Hobby Shop</h3>
+            <h3 class="mt-4">Jual kartu pokemon, Castle Hobby Shop</h3>
             <p>Bagi para kolektor dan penggemar budaya pop, Castle Cafe juga menghadirkan Castle Hobby Shop—surga kecil
               yang menjual berbagai kartu Pokémon dan merchandise hobi lainnya. Sambil menikmati makanan, Anda bisa
               berburu kartu langka, berdiskusi sesama kolektor, atau memperkenalkan dunia kartu pada anak-anak dengan
@@ -195,47 +304,6 @@
           </div>
         </div>
       </div>
-  </section>
-
-  <section id="gallery" class="section-a text-center">
-    <div class="container">
-      <h2 class="fw-bold mb-4">Galeri</h2>
-
-      <!-- ===== Main Display ===== -->
-      <div id="main-slide" class="mx-auto rounded-4 overflow-hidden shadow-lg mb-4" style="max-width: 900px;">
-        <img src="../assets/images/cc/Image_1.webp" alt="slide" class="w-100 h-100 object-fit-cover">
-      </div>
-
-      <!-- ===== Navigation Bar ===== -->
-      <div class="d-flex align-items-center justify-content-center gap-3">
-
-        <!-- ← arrow -->
-        <button id="nav-prev" class="btn-nav rounded-circle d-flex align-items-center justify-content-center">
-          <i class="bi bi-arrow-left-short fs-1"></i>
-        </button>
-
-        <!-- Thumbnails wrapper (mask) -->
-        <div id="thumb-wrapper" class="flex-grow-1 overflow-hidden">
-          <div id="thumb-strip" class="d-flex flex-nowrap gap-3">
-            <!-- Thumbnails -->
-            <img src="../assets/images/cc/Image_1.webp" data-index="0" class="thumb active">
-            <img src="../assets/images/cc/Image_3.webp" data-index="1" class="thumb">
-            <img src="../assets/images/cc/shot.JPG" data-index="2" class="thumb">
-            <img src="../assets/images/cc/Image_4.webp" data-index="3" class="thumb">
-            <img src="../assets/images/cc/Image_5.webp" data-index="4" class="thumb">
-            <img src="../assets/images/cc/Image_6.webp" data-index="5" class="thumb">
-            <img src="../assets/images/cc/Image_7.webp" data-index="6" class="thumb">
-            <img src="../assets/images/cc/image_8.JPG" data-index="7" class="thumb">
-            <!-- add more if needed -->
-          </div>
-        </div>
-
-        <!-- → arrow -->
-        <button id="nav-next" class="btn-nav rounded-circle d-flex align-items-center justify-content-center">
-          <i class="bi bi-arrow-right-short fs-1"></i>
-        </button>
-      </div>
-    </div>
   </section>
 
   <!-- MENU -->
@@ -249,7 +317,7 @@
         <div class="col-md-3 text-center align-items-centerxt-md-start text-sm-center text-lg-end">
           <a href="https://drive.google.com/file/d/16dvzkeBXdeK_d7SrAFwpHDkb-Z6CKFyi/view" target="_blank"
             class="menu-link">
-            <img src="../assets/images/cc/menu.png" alt="Menu Digital" class="img-fluid menu-cover">
+            <img src="../assets/images/bw/menu.png" alt="Menu Digital" class="img-fluid menu-cover">
           </a>
         </div>
         <div class="col-md-1"></div>
