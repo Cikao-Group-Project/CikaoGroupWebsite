@@ -503,6 +503,13 @@ footer ul {
   text-align: center;
 }
 
+.layout .outlet-card img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain !important;
+}
+
+
 /* layout outlet utama */
 .mainlayout {
   width: 100%;
