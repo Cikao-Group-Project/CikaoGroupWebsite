@@ -242,6 +242,8 @@ p {
 .activity-card h5 {
   font-weight: 600;
   margin-top: 0.5rem;
+  color: black;
+  text-align: center;
 }
 
 .activity-card .price {
@@ -249,6 +251,11 @@ p {
   font-size: 0.9rem;
   margin: 0;
 }
+
+.activity-card p, .activity-card li{
+  color: black;
+}
+
 
 
 
