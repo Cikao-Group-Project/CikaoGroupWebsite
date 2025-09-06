@@ -199,106 +199,135 @@
     </div>
   </section>
 
+  <!-- MENU -->
+  <section id="menu">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-md-4 text-center text-md-start mb-4 mb-md-0">
+          <h2 class="fw-bold">Lihat Menu Cafe:</h2>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-3 text-center text-lg-end">
+          <!-- Trigger modal -->
+          <img src="../assets/images/bw/Menu-BW.webp" alt="Menu Digital" class="img-fluid menu-cover"
+            style="cursor:pointer;" data-bs-toggle="modal" data-bs-target="#menuModal">
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOTSTRAP MODAL -->
+  <div class="modal fade" id="menuModal" tabindex="-1" aria-labelledby="menuModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl"> <!-- modal-xl biar gede -->
+      <div class="modal-content bg-dark">
+        <div class="modal-header border-0">
+          <h5 class="modal-title text-white" id="menuModalLabel">Menu Cafe Black & White</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="../assets/images/bw/Menu-BW.webp" alt="Menu Digital Full" class="img-fluid zoomable">
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="section-b">
-    <!-- OPERATING HOUR -->
-    <section id="hour">
-      <div class="container">
-        <h2 class="fw-bold text-center mb-5">Jam Operasional</h2>
-        <div class="row align-items-center justify-content-center">
-          <div class="col-md-4 text-center mb-4">
-            <h2 class="fw-bold">WEEKDAY</h2>
-            <p class="text-center fs-5">PUKUL 16:00 - 01:00 WIB</p>
-          </div>
-          <div class="col-md-2"></div>
-          <div class="col-md-4 text-center mb-4">
-            <h2 class="fw-bold">WEEKDAY</h2>
-            <p class="text-center fs-5">PUKUL 16:00 - 21:00 WIB</p>
+      <!-- OPERATING HOUR -->
+      <section id="hour">
+        <div class="container">
+          <h2 class="fw-bold text-center mb-5">Jam Operasional</h2>
+          <div class="row align-items-center justify-content-center">
+            <div class="col-md-4 text-center mb-4">
+              <h2 class="fw-bold">WEEKDAY</h2>
+              <p class="text-center fs-5">PUKUL 16:00 - 01:00 WIB</p>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-4 text-center mb-4">
+              <h2 class="fw-bold">WEEKDAY</h2>
+              <p class="text-center fs-5">PUKUL 16:00 - 21:00 WIB</p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- PRICELIST -->
-    <section id="price">
-      <div class="container">
-        <h2 class="fw-bold text-center mb-5">Daftar Harga</h2>
-        <div class="row justify-content-center gy-5">
-          <div class="col-lg-1"></div>
-          <div class="col-4 col-lg-4 col-sm-11">
-            <h2 class="fw-bold text-center mb-4">Pool</h2>
-            <table class="table table-borderless text-white fs-5">
-              <thead>
-                <tr class="fw-bold">
-                  <th scope="col">Paket</th>
-                  <th scope="col" class="text-center">PS4</th>
-                  <th scope="col" class="text-center">Nintendo<br>Switch</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1 Jam</td>
-                  <td class="text-center">15K</td>
-                  <td class="text-center">24K</td>
-                </tr>
-                <tr>
-                  <td>3 Jam</td>
-                  <td class="text-center">40K</td>
-                  <td class="text-center">65K</td>
-                </tr>
-                <tr>
-                  <td>5 Jam</td>
-                  <td class="text-center">65K</td>
-                  <td class="text-center">105K</td>
-                </tr>
-              </tbody>
-            </table>
-            <p class="small text-start mt-4">Catatan: Semua device sudah include 2 controllers. Menambah controller @5K
-            </p>
-          </div>
-          <div class="col-lg-2 col-sm-1"></div>
-          <div class="col-lg-4 col-sm-11">
-            <h2 class="fw-bold text-center mb-4">Arcade</h2>
+      <!-- PRICELIST -->
+      <section id="price">
+        <div class="container">
+          <h2 class="fw-bold text-center mb-5">Daftar Harga</h2>
+          <div class="row justify-content-center gy-5">
+            <div class="col-lg-1"></div>
+            <div class="col-4 col-lg-4 col-sm-11">
+              <h2 class="fw-bold text-center mb-4">Pool</h2>
+              <table class="table table-borderless text-white fs-5">
+                <thead>
+                  <tr class="fw-bold">
+                    <th scope="col">Hari</th>
+                    <th scope="col" class="text-center">4PM-8PM</th>
+                    <th scope="col" class="text-center">8PM-1AM</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Senin-Kamis</td>
+                    <td class="text-center">30K</td>
+                    <td class="text-center">45K</td>
+                  </tr>
+                  <tr>
+                    <td>Jumat-Minggu</td>
+                    <td class="text-center">45K</td>
+                    <td class="text-center">55K</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="small text-start mt-4">Catatan: Harga untuk satuan per jam
+              </p>
+            </div>
+            <div class="col-lg-2 col-sm-1"></div>
+            <div class="col-lg-4 col-sm-11">
+              <h2 class="fw-bold text-center mb-4">Arcade</h2>
 
-            <table class="table table-borderless text-white fs-5">
-              <thead>
-                <tr class="fw-bold">
-                  <th scope="col">Paket</th>
-                  <th scope="col" class="text-center">PS4</th>
-                  <th scope="col" class="text-center">Nintendo<br>Switch</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1 Jam</td>
-                  <td class="text-center">15K</td>
-                  <td class="text-center">24K</td>
-                </tr>
-                <tr>
-                  <td>3 Jam</td>
-                  <td class="text-center">40K</td>
-                  <td class="text-center">65K</td>
-                </tr>
-                <tr>
-                  <td>5 Jam</td>
-                  <td class="text-center">65K</td>
-                  <td class="text-center">105K</td>
-                </tr>
-              </tbody>
-            </table>
-            <p class="small text-start mt-4">Catatan: Semua device sudah include 2 controllers. Menambah controller @5K
-            </p>
+              <table class="table table-borderless text-white fs-5">
+                <thead>
+                  <tr class="fw-bold">
+                    <th scope="col">Paket</th>
+                    <th scope="col" class="text-center">PS4</th>
+                    <th scope="col" class="text-center">Nintendo<br>Switch</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1 Jam</td>
+                    <td class="text-center">15K</td>
+                    <td class="text-center">24K</td>
+                  </tr>
+                  <tr>
+                    <td>3 Jam</td>
+                    <td class="text-center">40K</td>
+                    <td class="text-center">65K</td>
+                  </tr>
+                  <tr>
+                    <td>5 Jam</td>
+                    <td class="text-center">65K</td>
+                    <td class="text-center">105K</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="small text-start mt-4">Catatan: Semua device sudah include 2 controllers. Menambah controller
+                @5K
+              </p>
+            </div>
+            <div class="col-lg-1"></div>
           </div>
-          <div class="col-lg-1"></div>
         </div>
-      </div>
 
-      <!-- CTA -->
-      <div class="text-center mt-5">
-        <a href="https://wa.me/62895609650808" class="btn btn-light text-dark fw-bold px-5 py-3 w-md-auto">
-          Reservasi Sekarang!
-        </a>
-      </div>
-    </section>
+        <!-- CTA -->
+        <div class="text-center mt-5">
+          <a href="https://wa.me/62895609650808" class="btn btn-light text-dark fw-bold px-5 py-3 w-md-auto">
+            Reservasi Sekarang!
+          </a>
+        </div>
+      </section>
   </div>
 
 

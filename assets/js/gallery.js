@@ -1,10 +1,9 @@
 /* ------- CONFIG -------- */
-const AUTOPLAY_DELAY = 4000; // Dibuat sedikit lebih lama, 4 detik
+const AUTOPLAY_DELAY = 2000; // Dibuat sedikit lebih lama, 4 detik
 
 /* ------- INIT FOR EACH SECTION -------- */
 document.querySelectorAll('.gallery').forEach(section => {
-    // Selector diubah dari #id menjadi .class
-    const mainImg = section.querySelector('.main-slide img');
+    const mainImg = section.querySelector('#main-slide img');
     const thumbs = Array.from(section.querySelectorAll('.thumb'));
     const strip = section.querySelector('.thumb-strip');
     const btnPrev = section.querySelector('.nav-prev');
