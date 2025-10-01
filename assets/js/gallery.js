@@ -1,13 +1,14 @@
 /* ------- CONFIG -------- */
-const AUTOPLAY_DELAY = 2000; // Dibuat sedikit lebih lama, 4 detik
+const AUTOPLAY_DELAY = 2000;
 
 /* ------- INIT FOR EACH SECTION -------- */
 document.querySelectorAll('.gallery').forEach(section => {
     const mainImg = section.querySelector('#main-slide img');
     const thumbs = Array.from(section.querySelectorAll('.thumb'));
     const strip = section.querySelector('.thumb-strip');
-    const btnPrev = section.querySelector('.nav-prev');
-    const btnNext = section.querySelector('.nav-next');
+    // Support both id and class for nav buttons
+    const btnPrev = section.querySelector('#nav-prev') || section.querySelector('.nav-prev');
+    const btnNext = section.querySelector('#nav-next') || section.querySelector('.nav-next');
 
     if (!mainImg || thumbs.length === 0) return; // Skip if invalid
 
@@ -29,7 +30,7 @@ document.querySelectorAll('.gallery').forEach(section => {
     }
 
     function scrollStrip(px) {
-        if (strip) { // Tambahkan pengecekan jika strip ada
+        if (strip) {
             strip.scrollBy({ left: px, behavior: 'smooth' });
         }
     }
@@ -54,13 +55,15 @@ document.querySelectorAll('.gallery').forEach(section => {
 
     // Event listeners
     btnPrev?.addEventListener('click', () => {
-        scrollStrip(-thumbs[0].offsetWidth * 3);
+        nextSlide(-1);
         userInteracted();
+        scrollStrip(-100);
     });
 
     btnNext?.addEventListener('click', () => {
-        scrollStrip(thumbs[0].offsetWidth * 3);
+        nextSlide(1);
         userInteracted();
+        scrollStrip(100);           
     });
 
     thumbs.forEach(t => {
